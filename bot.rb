@@ -4,7 +4,7 @@ require 'cinch'
 bot = Cinch::Bot.new do
   configure do |c|
     c.server = 'irc.freenode.net'
-    c.channels = ENV['CHANNELS'].split(',')
+    c.channels = Channel.all.map(&:name)
     c.nick = 'irc_spider'
   end
 

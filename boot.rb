@@ -9,3 +9,4 @@ Mongoid.logger = nil
 Mongoid.load!('config/mongoid.yml')
 
 require './message'
+require './channel'
