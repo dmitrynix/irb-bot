@@ -1,0 +1,12 @@
+development:
+  host: localhost
+  database: bot_development
+
+test:
+  host: localhost
+  database: bot_test
+
+# set these environment variables on your prod server
+production:
+  host: localhost
+  database: bot_production
