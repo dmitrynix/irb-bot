@@ -5,5 +5,6 @@ gem 'mongoid'
 gem 'bson_ext'
 
 group :development do
+  gem 'foreman'
   gem 'heroku'
 end
