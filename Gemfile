@@ -7,4 +7,5 @@ gem 'bson_ext'
 group :development do
   gem 'foreman'
   gem 'heroku'
+  gem 'capistrano'
 end
