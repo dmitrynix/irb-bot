@@ -9,3 +9,8 @@ gem 'sinatra'
 group :development do
   gem 'capistrano'
 end
+
+group :development, :test do
+  gem 'rspec'
+  gem 'rack-test', :require => 'rack/test'
+end
