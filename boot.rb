@@ -6,11 +6,7 @@ Bundler.require :default
 ENV['RACK_ENV'] ||= 'development'
 
 Mongoid.logger = nil
-begin
-  Mongoid.load!('config/mongoid.yml')
-rescue
-  require './heroku'
-end
+Mongoid.load!('config/mongoid.yml')
 
 require './message'
 require './channel'
