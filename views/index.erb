@@ -1,0 +1,9 @@
+<html>
+  <body>
+    <ul>
+      <% @messages.each do |message| %>
+      <li>[<%= message.created_at %>, <%= message.nick %>] <%= message.message %></li>
+      <% end %>
+    </ul>
+  </body>
+</html>
